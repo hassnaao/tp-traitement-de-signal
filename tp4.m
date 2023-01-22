@@ -7,17 +7,17 @@ clc
 %partie 2
 
 [music, fs] = audioread('test.wav');
-% save('testt.mat', 'y', 'fs');
-%load('test.mat');
 music = music';
-N=length(music);% N= nombre dechantionnage
-te = 1/fs;% fs=fe
+N=length(music);
+% N= nombre dechantionnage
+te = 1/fs;
+% fs=fe
 t = (0:N-1)*te;
 
 f = (0:N-1)*(fs/N);% interval de freq
-fshift = (-N/2:N/2-1)*(fs/N);%pour centrer hda 0 
+fshift = (-N/2:N/2-1)*(fs/N);
 
-y_trans = fft(music);%transformation frequenciel
+y_trans = fft(music);
 % subplot(3,1,1)
 % plot(t,y)
 % subplot(3,1,2)
@@ -27,12 +27,12 @@ y_trans = fft(music);%transformation frequenciel
 % % % % % % % % % % % % % % % % % % % % % % % % % % % 
 
 k = 1;
-fc = 5000;% frequence de copure
+fc = 5000;
 %la transmitance complexe 
 h =k./(1+1j*(f/fc).^100); %100= ordre
 h_filter = [h(1:floor(N/2)), flip(h(1:floor(N/2)))];
 
-semilogx(f(1:floor(N/2)),abs( h(1:floor(N/2))),'linewidth',1.5) % domaine analogique 10 ouss
+semilogx(f(1:floor(N/2)),abs( h(1:floor(N/2))),'linewidth',1.5) 
 
 % %diagramme de bode en fct de la phase 
 % P = angle(h);
