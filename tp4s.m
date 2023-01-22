@@ -4,11 +4,11 @@ clc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %partie 1
 
-Te = 5*1e-4;% periode dechantionnage
+Te = 5*1e-4;
 f1 = 500;
 f2 = 400;
 f3 = 50;
-t = 0:Te:5-Te;%le pas
+t = 0:Te:5-Te;
 fe = 1/Te;
 N = length(t);
 
@@ -34,7 +34,7 @@ h = (k*1j*((2*pi*f)/wc))./(1+1j*((2*pi*f)/wc));
 h1 = (k*1j*((2*pi*f)/wc1))./(1+1j*((2*pi*f)/wc1));
 h2 = (k*1j*((2*pi*f)/wc2))./(1+1j*((2*pi*f)/wc2));
 
-G = 20*log(abs(h));%diagramme de bode
+G = 20*log(abs(h));     %diagramme de bode
 G1 = 20*log(abs(h1));
 G2 = 20*log(abs(h2));
 
