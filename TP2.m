@@ -4,7 +4,7 @@ clc
 %% Jeux de mots
 %Question 1:
 
-[x,fe]=audioread("C:\Users\zaina\Desktop\MyFile\S'5\Traitement de signal\tp2\Phrase.m4a");
+[x,fe]=audioread("C:\Users\hassna\Desktop\MyFile\S'5\Traitement de signal\tp2\Phrase.m4a");
 
 %Question 2:
 
@@ -22,8 +22,8 @@ clc
 %Question 4:
 
 stem(x)
-%Après le traçage de la fonction x on peut arriver a voir que le morceau 
-%Rien ne sert de est contenue dans la partie de l'index 1025 j'usqu'à 2.05e05
+%AprÃ¨s le traÃ§age de la fonction x on peut arriver a voir que le morceau 
+%Rien ne sert de  contenue dans la partie de l'index 1025 j'usqu'Ã  2.05e05
 
 %Question 5:
 
@@ -50,9 +50,9 @@ parole=[riennesertde ,partirapoint ,ilfaut,courir];
 %sound(parole,fe)
 
 
-%% Synthèse et analyse spectrale d’une gamme de musique
+%% SynthÃ¨se et analyse spectrale dâ€™une gamme de musique
 
-%Synthèse d’une gamme de musique
+%SynthÃ¨se dâ€™une gamme de musique
 
 %Question 1:
 
