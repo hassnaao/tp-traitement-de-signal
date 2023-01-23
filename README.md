@@ -19,6 +19,8 @@
 
 ******************************************************* tp 4 *******************************************************
 
+![ts tp4 1](https://user-images.githubusercontent.com/122915744/214036620-e3db0a97-af5d-4343-908d-21caaecd6f5a.png)
+![ts tp4 2](https://user-images.githubusercontent.com/122915744/214036627-1e398e19-d9a9-4278-ad13-f650d864512d.png)
 
 
 
