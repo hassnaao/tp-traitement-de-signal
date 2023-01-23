@@ -8,7 +8,7 @@ N = 5000;
 
 t = (0:N-1)*te; 
 
-%% Représentation temporelle et fréquentielle
+%% ReprÃ©sentation temporelle et frÃ©quentielle
 
 x = 1.2*cos(2*pi*440*t+1.2)+3*cos(2*pi*550*t)+0.6*cos(2*pi*2500*t);
 figure;
@@ -23,30 +23,30 @@ title('Le signal x(t)')
 
 %Question 2:
 
-%Step 1: créé le vecteur f qui correspond à l'échantillonnage du signal 
-%dans l'espace fréquentiel
+%Step 1: crÃ©Ã© le vecteur f qui correspond Ã  l'Ã©chantillonnage du signal 
+%dans l'espace frÃ©quentiel
 f =(0:N-1)*(fe/N); 
 %Utilisation de la commande fft qui correspond a faire la transformee
-%de fourier discret d'une manière rapide 
+%de fourier discret d'une maniÃ¨re rapide 
 y = fft(x); 
 %sans decalage
 % On fait abs pour avoir le module  
 subplot(2,3,2)
 plot(f,abs(y));
-%avec la commande fft on obtient un spectre qui n'est pas centré sur 0
+%avec la commande fft on obtient un spectre qui n'est pas centrÃ© sur 0
 title("Le spectre d'amplitude")
 
 
 %Question 3:
 
-%Pour centré le spectre on doit créer une autre variable dont on va tracer
-%la fonction fftshift qui fait le décalage
+%Pour centrÃ© le spectre on doit crÃ©er une autre variable dont on va tracer
+%la fonction fftshift qui fait le dÃ©calage
 fshift = (-N/2:N/2-1)*(fe/N);
 subplot(2,3,3)
 %On multiplie par 2 pour avoir l'ampliture exact avant on obtient le module
 %de Cn
 plot(fshift,fftshift(2*abs(y)/N))
-title("Le spectre d'amplitude centré")
+title("Le spectre d'amplitude centrÃ©")
 
 
 %Question 4:
@@ -82,12 +82,12 @@ ybruit2 = fft(xnoise2);
 plot(fshift,fftshift((abs(ybruit2))*2/N));
 title("Le signal noise 2")
 
-%Après l'augementation de l'intensité du signal bruit on remarque que le
+%AprÃ¨s l'augementation de l'intensitÃ© du signal bruit on remarque que le
 %spectre de bruit est encombrer avec celui qui contient l'informatrion
-%pertinante du coup ça sera très difficile d'extrait et filtrer le signal
+%pertinante du coup Ã§a sera trÃ¨s difficile d'extrait et filtrer le signal
 %xnoise2
 
-%% Analyse fréquentielle du chant du rorqual bleu
+%% Analyse frÃ©quentielle du chant du rorqual bleu
 
 %Question 1:
 [whale,fe]=audioread("bluewhale.au");
@@ -109,4 +109,11 @@ y = abs(fft(chant)).^2/N;
 f = (0:floor(N/2))*(fe/N)/10;
 subplot(2,1,2)
 plot(f,y(1:floor(N/2)+1));
-title('Le signal densité spectrale de puissance du signal')
+title('Le signal densitÃ© spectrale de puissance du signal')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% add image
+
+div<
+<img src "<a href="http://www.noelshack.com/2023-04-1-1674436139-tp1-ts-1.png"><img src="http://image.noelshack.com/minis/2023/04/1/1674436139-tp1-ts-1.png" border="0" alt="1674436139-tp1-ts-1.png - envoi d'image avec NoelShack" title="1674436139-tp1-ts-1.png"/></a>" width="150" height="200">
+
+
+
