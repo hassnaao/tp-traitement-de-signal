@@ -112,8 +112,8 @@ plot(f,y(1:floor(N/2)+1));
 title('Le signal densité spectrale de puissance du signal')
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% add image
 
-div<
+<div>
 <img src "<a href="http://www.noelshack.com/2023-04-1-1674436139-tp1-ts-1.png"><img src="http://image.noelshack.com/minis/2023/04/1/1674436139-tp1-ts-1.png" border="0" alt="1674436139-tp1-ts-1.png - envoi d'image avec NoelShack" title="1674436139-tp1-ts-1.png"/></a>" width="150" height="200">
-
+<div>
 
 
