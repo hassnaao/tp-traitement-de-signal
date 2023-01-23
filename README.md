@@ -11,6 +11,10 @@
 
 *******************************************************tp 2*******************************************************
 
+![tp3 ts 3](https://user-images.githubusercontent.com/122915744/214036038-92a1e32d-4177-421f-b580-d35102cc7cce.png)
+![tp3 ts 4](https://user-images.githubusercontent.com/122915744/214036043-01d8995f-15b3-4797-b801-e83ccfa1b0be.png)
+![tp3 ts 1](https://user-images.githubusercontent.com/122915744/214036046-5a59971a-6410-4974-bbc3-8a298b95b599.png)
+![tp3 ts 2](https://user-images.githubusercontent.com/122915744/214036049-98b3dd6d-4ea6-4da2-a782-5512228995f6.png)
 
 
 
